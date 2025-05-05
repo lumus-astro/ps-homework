@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+const date = new Date()
+</script>
 
-<template></template>
+<template>
+  {{ date }}
+</template>
 
 <style scoped></style>
