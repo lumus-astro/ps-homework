@@ -1,5 +1,5 @@
 <script setup>
-const date = new Date()
+const date = new Date().toLocaleString()
 </script>
 
 <template>
