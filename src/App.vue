@@ -1,9 +1,22 @@
 <script setup>
-const date = new Date().toLocaleString()
+import Button from "./components/Button.vue";
 </script>
 
 <template>
-  {{ date }}
+  <div class="page">
+    <Button>
+      <template #default>Начать игру</template>
+    </Button>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-main);
+}
+</style>

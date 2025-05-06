@@ -1,6 +1,51 @@
 :root {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    --color-text-primary: #000000;
+    --color-text-title: #222222;
+
+    --color-btn-text: #FFFFFF;
+    --color-btn-bg-success: #09BB00;
+    --color-btn-bg-fail: #D00303;
+    --color-btn-bg-primary: #008BFE;
+    --color-btn-bg-secondary: #CCE8FF;
+    --color-btn-bg-primary-hover: #006FCB;
+
+    --color-bg-main: #F0F4F8;
+
+    --color-card-bg: #FFFFFF;
+    --color-card-border: #CCE8FF;
+
+    --font: "Roboto";
+}
+
+body {
+    font-family: var(--font), sans-serif;
+    background: var(--color-bg-main);
+    color: var(--color-text-primary);
+
+    min-height: 100vh;
+    line-height: 1.5;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
 }
