@@ -1,15 +1,15 @@
 <script setup>
-import IconLike from "../icons/IconLike.vue";
+import IconLike from "../icons/IconLike.vue"
 
 const props = defineProps({
-  score: {type: Number, required: true}
+  score: { type: Number, required: true },
 })
 </script>
 
 <template>
   <div class="score">
     {{ props.score }}
-    <IconLike/>
+    <IconLike />
   </div>
 </template>
 

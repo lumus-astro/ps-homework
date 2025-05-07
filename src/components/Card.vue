@@ -1,7 +1,7 @@
 <script setup>
-const {number, text} = defineProps({
-  number: {type: String, required: true},
-  text: {type: String, required: true},
+const { number, text } = defineProps({
+  number: { type: String, required: true },
+  text: { type: String, required: true },
 })
 const emit = defineEmits(["flip", "change-status"])
 </script>

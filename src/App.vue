@@ -1,7 +1,7 @@
 <script setup>
-import Button from "./components/Button.vue";
-import Toolbar from "./components/Toolbar.vue";
-import Card from "./components/Card.vue";
+import Button from "./components/Button.vue"
+import Toolbar from "./components/Toolbar.vue"
+import Card from "./components/Card.vue"
 
 const onFlip = (number) => {
   console.log(number)
@@ -11,7 +11,7 @@ const onFlip = (number) => {
 <template>
   <div class="page">
     <div class="header">
-      <Toolbar/>
+      <Toolbar />
     </div>
 
     <div class="content">
@@ -19,7 +19,7 @@ const onFlip = (number) => {
         <template #default>Начать игру</template>
       </Button>
 
-      <Card :number="'02'" :text="'vino'" @flip="onFlip"/>
+      <Card :number="'02'" :text="'vino'" @flip="onFlip" />
     </div>
   </div>
 </template>

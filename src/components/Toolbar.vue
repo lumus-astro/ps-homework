@@ -1,15 +1,12 @@
 <script setup>
-
-import Score from "./Score.vue";
+import Score from "./Score.vue"
 </script>
 
 <template>
   <div class="container">
-  <span class="title">
-    Запомни слово
-  </span>
+    <span class="title"> Запомни слово </span>
     <div>
-      <Score :score="100"/>
+      <Score :score="100" />
     </div>
   </div>
 </template>
