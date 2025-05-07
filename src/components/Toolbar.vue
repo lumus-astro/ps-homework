@@ -9,7 +9,7 @@ import Score from "./Score.vue";
     Запомни слово
   </span>
     <div>
-      <Score score="100"/>
+      <Score :score="100"/>
     </div>
   </div>
 </template>

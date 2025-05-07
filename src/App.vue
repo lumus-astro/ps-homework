@@ -2,6 +2,10 @@
 import Button from "./components/Button.vue";
 import Toolbar from "./components/Toolbar.vue";
 import Card from "./components/Card.vue";
+
+const onFlip = (number) => {
+  console.log(number)
+}
 </script>
 
 <template>
@@ -15,7 +19,7 @@ import Card from "./components/Card.vue";
         <template #default>Начать игру</template>
       </Button>
 
-      <Card/>
+      <Card :number="'02'" :text="'vino'" @flip="onFlip"/>
     </div>
   </div>
 </template>

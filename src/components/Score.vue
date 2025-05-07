@@ -2,7 +2,7 @@
 import IconLike from "../icons/IconLike.vue";
 
 const props = defineProps({
-  score: Number
+  score: {type: Number, required: true}
 })
 </script>
 

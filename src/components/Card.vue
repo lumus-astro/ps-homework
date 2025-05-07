@@ -1,14 +1,17 @@
 <script setup>
-
+const {number, text} = defineProps({
+  number: {type: String, required: true},
+  text: {type: String, required: true},
+})
 const emit = defineEmits(["flip", "change-status"])
 </script>
 
 <template>
   <div class="card">
     <div class="inner">
-      <span class="number">02</span>
-      <span class="text">vino</span>
-      <button class="button" @click="emit('flip')">Перевернуть</button>
+      <span class="number">{{ number }}</span>
+      <span class="text">{{ text }}</span>
+      <button class="button" @click="emit('flip', number)">Перевернуть</button>
     </div>
   </div>
 </template>
