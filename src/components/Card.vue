@@ -1,7 +1,9 @@
 <script setup>
-const { number, text } = defineProps({
+const { number, word } = defineProps({
   number: { type: String, required: true },
-  text: { type: String, required: true },
+  word: { type: String, required: true },
+  state: { type: String, required: true },
+  status: { type: String, required: true },
 })
 const emit = defineEmits(["flip", "change-status"])
 </script>
@@ -10,7 +12,7 @@ const emit = defineEmits(["flip", "change-status"])
   <div class="card">
     <div class="inner">
       <span class="number">{{ number }}</span>
-      <span class="text">{{ text }}</span>
+      <span class="text">{{ word }}</span>
       <button class="button" @click="emit('flip', number)">Перевернуть</button>
     </div>
   </div>
